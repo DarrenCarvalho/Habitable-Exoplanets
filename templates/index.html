@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}" type="text/css">
+    </head>
+    <body>
+        <div class="topnav">
+            <a href="table" target="_blank"><u>About</u></a>
+        </div> 
+        <div class="outline">
+            <div class="heading-input">
+                <h1>Habitable Explanet prediction</h1>
+            </div>
+                <div>
+                    <form action="/predict" method="POST" class="table-content">
+                    <div class="column-1">
+                        <br><br><br>
+                        <p style="position: relative; top: 30px;">Note : Check <a href="table" target="blank">About</a> for examples</p>
+                        <select name="pl_discmethod" id="pl_discmethod" class="input" ;color: 0 0 10px rgba(0,0,0,0.3);">
+                            <option value="" disabled selected>Discovery Method</option>
+                            <option value="1">Transit</option>
+                            <option value="0">Radial Velosity</option>
+                            <option value="999">Microlensing</option>
+                            <option value="999">Eclipse Timing Variations</option>
+                            <option value="999">Astrometry</option>
+                            <option value="999">Disk Kinematics</option>
+                            <option value="999">Orbital Brightness Modulation</option>
+                            <option value="999">Pulsation Timing Variations</option>
+                            <option value="999">Transit Timing Variations</option>
+                            <option value="999">Pulsar Timing</option>
+                        </select>
+                        <input type="number" name="pl_pnum" id="pl_pnum" placeholder="Number of Planets in the System" class="input">
+                        <input type="number" step="any" name="pl_orbper" id="pl_orbper" placeholder="Orbital Period" class="input">
+                        </label><input type="text" name="pl_hostname" id="pl_hostname" placeholder="Star Name" class="input">
+                        <input type="text" name="pl_name" id="pl_name" placeholder="Planet Name" class="input">
+                    </div>
+                    <div class="column-2">
+                        <input type="number" step="any" name="pl_radj" id="pl_radj" placeholder="Planet Radius" class="input">
+                        <input type="number" step="any" name="st_dist" id="st_dist" placeholder="Distance to Star" class="input">
+                        <input type="number" step="any" name="st_teff" id="st_teff" placeholder="Temperature of Star" class="input">
+                        <input type="number" step="any" name="st_rad" id="st_rad" placeholder="Radius of Star" class="input">
+                        <input type="number" step="any" name="st_lum" id="st_lum" placeholder="Luminosity of Star" class="input"><br><br>     
+                        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>      
+                </div>
+            </form>
+            </div>
+            <P style=" position: relative; left: 190px; top: 20px;">{{prediction}}</p>
+        </form>
+        </div>
+    </body>
+</html>

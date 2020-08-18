@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='css/table_sample_style.css')}}" type="text/css">
+</head>
+<body>
+  <div class="topnav">
+    <a>About</a>
+  </div> 
+  <div class="para">
+    <p>Habitable Exoplanets are the planets which have similar characteristics to Earth in terms of chemical
+      composition and are at an optimum distance form the parent star for liquid water to exist. The following 
+      algorithm is to predict the potential candidates for Habitable Exoplanets. </p>
+      
+      <p>To predict whether a planet is habitable or not, you can refer to the <b>Dataset Examples</b> link in the reference. </p>
+      <p><b>OR</b></p>
+      <p>Copy the row values from the table below.</p>
+      
+      <p><u> <b>In the Column 'habitable' (Acutal Values) :</b></u></p>
+      <ul>
+        <li>1 : The planet is habitable</li>
+        <li>0 : The planet is not habitable </li>
+      </ul>
+      <p>Compare the output in the form window with the habitable column to check if the prediction was right. </p>
+
+      <p>If input is given from a different data source take these units into consideration for correct outputs:</p>
+      <ul>
+        <li>Planet Orbital Period (In Earth Years)</li>
+        <li>Planet Radius ( In terms of Jupiter)</li>
+        <li>Distance to Star ( pc (1pc = 3.26156ly))</li>
+        <li>Temperature of Star (K)</li>
+        <li>Radius of Star ( In terms of Solar Radii )</li>
+        <li>Luminosity of Star ( Log(Solar) )</li>
+      </ul>
+      <p><b>References:</b></p>
+      <ol>
+        <li><a href="https://exoplanetarchive.ipac.caltech.edu/docs/data.html" target="_blank">Dataset Examples</a></li>
+        <li><a href="http://phl.upr.edu/projects/habitable-exoplanets-catalog" target="_blank">Confirmed Habitable Exoplanets</a></li>
+      </ol>
+      <p><b>Sample Data : </b></p>
+  </div>
+<table border="1" class="content-table">
+    <thead>
+      <tr style="text-align: right;">
+        <th></th>
+        <th>Star Name</th>
+        <th>Planet Name</th>
+        <th>Discovery Method</th>
+        <th>Number of Planets in the System</th>
+        <th>Orbital Period</th>
+        <th>Planet Radius</th>
+        <th>Distance to Star</th>
+        <th>Temperature of Star</th>
+        <th>Radius of Star</th>
+        <th>Luminosity of Star</th>
+        <th>habitable</th>
+      </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>4</th>
+            <td>TRAPPIST-1</td>
+            <td>TRAPPIST-1 g</td>
+            <td>Transit</td>
+            <td>7</td>
+            <td>12.352940</td>
+            <td>0.101</td>
+            <td>12.43</td>
+            <td>2559.0</td>
+            <td>0.12</td>
+            <td>-3.281</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>9</th>
+            <td>K2-149</td>
+            <td>K2-149 b</td>
+            <td>Transit</td>
+            <td>1</td>
+            <td>11.332000</td>
+            <td>0.146</td>
+            <td>118.00</td>
+            <td>3745.0</td>
+            <td>0.57</td>
+            <td>-1.310</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th>25</th>
+            <td>Kepler-439</td>
+            <td>Kepler-439 b</td>
+            <td>Transit</td>
+            <td>1</td>
+            <td>178.139600</td>
+            <td>0.200</td>
+            <td>693.00</td>
+            <td>5431.0</td>
+            <td>0.87</td>
+            <td>-0.236</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th>34</th>
+            <td>HAT-P-51</td>
+            <td>HAT-P-51 b</td>
+            <td>Transit</td>
+            <td>1</td>
+            <td>4.218028</td>
+            <td>1.293</td>
+            <td>470.00</td>
+            <td>5449.0</td>
+            <td>1.04</td>
+            <td>-0.066</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th>36</th>
+            <td>Kepler-186</td>
+            <td>Kepler-186 f</td>
+            <td>Transit</td>
+            <td>5</td>
+            <td>129.944100</td>
+            <td>0.104</td>
+            <td>172.00</td>
+            <td>3755.0</td>
+            <td>0.52</td>
+            <td>-1.260</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>45</th>
+            <td>TRAPPIST-1</td>
+            <td>TRAPPIST-1 f</td>
+            <td>Transit</td>
+            <td>7</td>
+            <td>9.206690</td>
+            <td>0.093</td>
+            <td>12.43</td>
+            <td>2559.0</td>
+            <td>0.12</td>
+            <td>-3.281</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>47</th>
+            <td>TRAPPIST-1</td>
+            <td>TRAPPIST-1 f</td>
+            <td>Transit</td>
+            <td>7</td>
+            <td>9.206690</td>
+            <td>0.093</td>
+            <td>12.43</td>
+            <td>2559.0</td>
+            <td>0.12</td>
+            <td>-3.281</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>49</th>
+            <td>WASP-44</td>
+            <td>WASP-44 b</td>
+            <td>Transit</td>
+            <td>1</td>
+            <td>2.423804</td>
+            <td>1.100</td>
+            <td>368.31</td>
+            <td>5420.0</td>
+            <td>0.91</td>
+            <td>-0.198</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th>63</th>
+            <td>Kepler-22</td>
+            <td>Kepler-22 b</td>
+            <td>Transit</td>
+            <td>1</td>
+            <td>289.862300</td>
+            <td>0.212</td>
+            <td>190.00</td>
+            <td>5518.0</td>
+            <td>0.98</td>
+            <td>-0.102</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>73</th>
+            <td>K2-9</td>
+            <td>K2-9 b</td>
+            <td>Transit</td>
+            <td>1</td>
+            <td>18.449800</td>
+            <td>0.201</td>
+            <td>83.16</td>
+            <td>3390.0</td>
+            <td>0.31</td>
+            <td>-1.921</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>77</th>
+            <td>HATS-68</td>
+            <td>HATS-68 b</td>
+            <td>Transit</td>
+            <td>1</td>
+            <td>3.586220</td>
+            <td>1.232</td>
+            <td>618.20</td>
+            <td>6147.0</td>
+            <td>1.75</td>
+            <td>0.592</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th>85</th>
+            <td>Kepler-440</td>
+            <td>Kepler-440 b</td>
+            <td>Transit</td>
+            <td>1</td>
+            <td>101.111410</td>
+            <td>0.170</td>
+            <td>261.00</td>
+            <td>4134.0</td>
+            <td>0.56</td>
+            <td>-1.102</td>
+            <td>1</td>
+          </tr>
+        </tbody>
+  </table>
+  <br><br><br><br>
+  <div>
+    <footer style="text-align:center">
+      <hr>
+      <p>Email: darrencarvalho7@gmail.com</p>
+      <p>St. Xavier's College Ahmedabad</p>
+    </footer>
+  </div>
+</body>
+</html>

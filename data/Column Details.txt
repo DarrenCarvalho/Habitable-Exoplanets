@@ -1,0 +1,24 @@
+# User preference: *							
+#							
+# COLUMN pl_hostname:    Host Name							
+# COLUMN pl_name:        Planet Name							
+# COLUMN pl_discmethod:  Discovery Method							
+# COLUMN pl_pnum:        Number of Planets in System							
+# COLUMN pl_orbper:      Orbital Period [days]							
+# COLUMN pl_orbsmax:     Orbit Semi-Major Axis [au])							
+# COLUMN pl_orbeccen:    Eccentricity							
+# COLUMN pl_orbincl:     Inclination [deg]							
+# COLUMN pl_bmassj:      Planet Mass or M*sin(i) [Jupiter mass]							
+# COLUMN pl_radj:        Planet Radius [Jupiter radii]							
+# COLUMN pl_dens:        Planet Density [g/cm**3]							
+# COLUMN ra_str:         RA [sexagesimal]							
+# COLUMN ra:             RA [decimal degrees]							
+# COLUMN dec_str:        Dec [sexagesimal]							
+# COLUMN dec:            Dec [decimal degrees]							
+# COLUMN st_dist:        Distance [pc]							
+# COLUMN st_teff:        Effective Temperature [K]							
+# COLUMN st_mass:        Stellar Mass [Solar mass]							
+# COLUMN st_rad:         Stellar Radius [Solar radii]							
+# COLUMN rowupdate:      Date of Last Update							
+# COLUMN st_lum:         Stellar Luminosity [log(Solar)]							
+# COLUMN st_dens:        Stellar Density [g/cm**3]														

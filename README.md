@@ -22,31 +22,27 @@ ST_LUM – Luminosity of Star ( Log(Solar) )
 
 ## Flow OF Code
 
-1. Drop Columns with more than 50% Nan Values
+1. Drop Columns with more than 50% Nan Values.
 
-2. Check Habitable Planets are discovered by which method
+2. Check Habitable Planets are discovered by which method (Count Plot).
 
-3. Define Constants (Solar Radii, Solar Luminosity, Stefan Boltzman Constant)
+3. Define Constants (Solar Radii, Solar Luminosity, Stefan Boltzman Constant).
 
-4. Impute Stellar Luminosity Values which had 84% Nan Values
+4. Impute Stellar Luminosity Values which had 84% Nan Values.
 
-5. Change Orbital Period ( Days to Years )
+5. Transform Numerical to Gausian Dist:
+	Transformations: ( LOG, LOG(1+VAL), Square, Inverse ).
 
-6. Transform Numerical to Gausian Dist:
-	Transformations: ( LOG, LOG(1+VAL), Square, Inverse )
+6. Drop Outlier Rows.
 
-7. Drop Outlier Rows
+7. Drop Nan Rows.
 
-8. Drop Nan Rows
+9. qqplot and Boxplot to check Normality and Distribution.
 
-9. qqplot and Boxplot to check Normality and Distribution
+10. Drop pl_hostname, pl_name and perform One Hot Encoding on pl_discmethod.
 
-10. Label Encoding To categorical variables
+11. Up Sampling using SMOTE.
 
-11. Under Sampling ( Random Sample from '0' class )
+13. Cross Validation Evaluation.
 
-12. Feature Selection ( Select K BEST )
-
-13. Cross Validation Evaluation
-
-14. Evaluation on test data
+14. Evaluation on test data.

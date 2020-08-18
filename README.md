@@ -1,5 +1,9 @@
 # Habitable-Exoplanets
 
+## Heroku model deployment url:
+
+https://exoplanets-api.herokuapp.com/
+
 ## Feature Details
 
 Pl_HOSTNAME – Star Name

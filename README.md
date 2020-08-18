@@ -46,3 +46,5 @@ ST_LUM – Luminosity of Star ( Log(Solar) )
 13. Cross Validation Evaluation.
 
 14. Evaluation on test data.
+
+15. Feature Creation : inner_radius and outer radius of habitable zones, binning st_temp as per stelar type 

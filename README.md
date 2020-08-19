@@ -52,3 +52,5 @@ ST_LUM – Luminosity of Star ( Log(Solar) )
 14. Evaluation on test data.
 
 15. Feature Creation : inner_radius and outer radius of habitable zones, binning st_temp as per stelar type. 
+
+16. Model Best : XGBoostClassifier.
